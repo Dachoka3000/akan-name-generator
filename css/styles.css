@@ -4,3 +4,13 @@ h {
     font-weight: bolder;
     font-size: larger;
 }
+#bannerimage {
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/94388.jpg);
+    height: 300px;
+    background-color: gold;
+    background-position: center;
+}
+body {
+    background-color: khaki;
+}
