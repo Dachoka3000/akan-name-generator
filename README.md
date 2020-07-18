@@ -16,9 +16,11 @@ javascript
 css
 
 ###BDD
--Input your birthday details
 -Choose your gender by clicking on the appropriate field provided
 -Press the submit button. 
+-Input birthday details
+-Press the submit button
+-Press the 'get akan name button'
 -Your details will be fed into the application which will then generate your akan name.
 -If the dates you enter are not valid, you will receive an error telling you to put a valid one.
 
