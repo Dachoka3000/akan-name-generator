@@ -1,8 +1,8 @@
 var myFirstFunction= function(){
     var birthday= new Date();
-    var dateOfBirth=parseInt(document.getElementById("date"));
-    var monthOfBirth=parseInt(document.getElementById("month"));
-    var yearOfBirth=parseInt(document.getElementById("year"));
+    var dateOfBirth=parseInt(document.getElementById("date").value);
+    var monthOfBirth=parseInt(document.getElementById("month").value);
+    var yearOfBirth=parseInt(document.getElementById("year").value);
     
     if (date <0 || date >31) {
         document.getElementsByClassName("dateError").innerHTML="Please enter valid date";
@@ -21,5 +21,22 @@ var myFirstFunction= function(){
         return false;
     } else {
         birthday.setFullYear(yearOfBirth);
+    }
+
+    var day=birthday.getDay();
+    var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var maleNames=['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
+    var femaleNames=['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+
+    var mySecondFunction= function() {
+        var male=document.getElementById("male");
+        var female=document.getElementById("female");
+        if (male.checked===true){
+            return male.value;
+        }else if (female.checked===true) {
+            return female.value;
+        }else {
+            alert("Please select gender");
+        }
     }
 }
