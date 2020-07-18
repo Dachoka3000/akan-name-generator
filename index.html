@@ -17,21 +17,19 @@
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br><br>
-            <button id="bttn1" onclick="fn1()">Submit</button>
+            <button id="bttn1" onclick=myGenderFunction()>Submit</button>
             <p id="genderError"></p>
         </form>
         <form>
             <h1>Birthday</h1>
-            <p id="dateError"></p>
-            <input type="text" id="date" placeholder="DD" name="date" required>
+            <input type="number" id="date" placeholder="DD" name="date" required>
             <label for="date">Date</label><br>
-            <p id="monthError"></p>
-            <input type="text" id="month" placeholder="MM" name="month" required>
+            <input type="number" id="month" placeholder="MM" name="month" required>
             <label for="month">Month</label><br>
-            <p id="yearError"></p>
-            <input type="text" id="year" placeholder="CCYY" name="year" required>
+            <input type="number" id="year" placeholder="CCYY" name="year" required>
             <label for="year">Year</label><br><br>
-            <input type="submit" value="submit">
+            <button id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
+            <button id="bttn3" onclick=getAkanName()>Get Akan Name</button>
 
         </form>
 
