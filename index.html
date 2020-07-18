@@ -10,7 +10,7 @@
         <h>Akan Name Generator</h>
         <p>In Ghana, children are named according to their Gender and the day of the week in which they were born. For example, a male child born on Monday would be named Kwadwo, while a female would be named Adwoa. These are called 'day names'.</p>
         <p>Curious about what your day name would be? Find out by filling the form below!</p>
-        <div id="error"></div>
+        <p></p>
         <form  input id="genderForm" >
             <h1>Gender</h1>
             <input type="radio" id="male" name="gender" value="male">
@@ -24,10 +24,13 @@
             <h1>Birthday</h1>
             <input type="number" id="date" placeholder="DD" name="date" required>
             <label for="date">Date</label><br>
+            <p id="dateError"></p><br>
             <input type="number" id="month" placeholder="MM" name="month" required>
             <label for="month">Month</label><br>
+            <p id="monthError"></p><br>
             <input type="number" id="year" placeholder="CCYY" name="year" required>
-            <label for="year">Year</label><br><br>
+            <label for="year">Year</label><br>
+            <p id="yearError"></p><br><br>
             <button id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
             <button id="bttn3" onclick=getAkanName()>Get Akan Name</button>
 
