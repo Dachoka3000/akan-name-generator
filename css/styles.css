@@ -4,12 +4,19 @@ h {
     font-weight: bolder;
     font-size: larger;
 }
-#bannerimage {
+.box {
     width: 100%;
-    background-image: url(https://wallpaperaccess.com/full/94388.jpg);
-    height: 300px;
-    background-color: gold;
-    background-position: center;
+    height: 200px;
+    border: 5px;
+    float: inline-end;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    text-align: center;
 }
 body {
     background-color: khaki;
