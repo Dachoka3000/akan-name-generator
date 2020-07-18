@@ -11,39 +11,29 @@ var myGenderFunction=function() {
 };
 
 
-
-
-
-
-
-
-
-
-var myFirstFunction= function(){
-    var birthday= new Date();
-    var dateOfBirth=parseInt(document.getElementById("date").value);
-    var monthOfBirth=parseInt(document.getElementById("month").value);
-    var yearOfBirth=parseInt(document.getElementById("year").value);
+var myBirthdayFunction= function(){
+    var dateOfBirth=document.getElementById("date");
+    var monthOfBirth=document.getElementById("month");
+    var yearOfBirth=document.getElementById("year");
     
-    if (date <0 || date >31) {
-        document.getElementsByClassName("dateError").innerHTML="Please enter valid date";
+    if (dateOfBirth.value<0 || dateOfBirth.value >31) {
+        document.getElementById("dateError").innerHTML="Please enter valid date";
         return false;
     } else {
-        birthday.setDate(dateOfBirth)
+        "";
     }
-    if (month<0 || month>12) {
-        document.getElementsByClassName("monthError").innerHTML="Please enter valid month";
+    if (monthOfBirth.value<0 || monthOfBirth.value>12) {
+       document.getElementById("monthError").innerHTML="Please enter valid month";
         return false;
     } else {
-        birthday.setMonth(monthOfBirth);
+        "";
     }
-    if (year<0) {
-        document.getElementsByClassName("yearError").innerHTML="Please enter valid year";
-        return false;
+    if (yearOfBirth.value<0 || yearOfBirth.value>2020 ) {
+        document.getElementById("yearError").innerHTML="Please enter valid year";
     } else {
-        birthday.setFullYear(yearOfBirth);
+        "";
     }
-
+};
     var day=birthday.getDay();
     var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     var maleNames=['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
@@ -60,4 +50,3 @@ var myFirstFunction= function(){
             alert("Please select gender");
         }
     }
-}
