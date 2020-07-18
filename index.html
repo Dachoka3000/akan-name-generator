@@ -10,34 +10,38 @@
         <div class="box">
             <img src="images/ghanianprintart.jpg" alt="Ghanian print art">
         </div>
-        <h>Akan Name Generator</h>
-        <p>In Ghana, children are named according to their Gender and the day of the week in which they were born. For example, a male child born on Monday would be named Kwadwo, while a female would be named Adwoa. These are called 'day names'.</p>
-        <p>Curious about what your day name would be? Find out by filling the form below!</p>
-        <p></p>
-        <form  input id="genderForm" onsubmit="return myGenderFunction()">
-            <h1>Gender</h1>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br><br>
-            <button type="submit" id="bttn1" onclick=myGenderFunction()>Submit</button>
-            <p id="genderError"></p>
-        </form>
-        <form onsubmit="return myBirthdayFunction()">
-            <h1>Birthday</h1>
-            <input type="number" id="date" placeholder="DD" name="date" required>
-            <label for="date">Date</label><br>
-            <p id="dateError"></p><br>
-            <input type="number" id="month" placeholder="MM" name="month" required>
-            <label for="month">Month</label><br>
-            <p id="monthError"></p><br>
-            <input type="number" id="year" placeholder="YYYY" name="year" required>
-            <label for="year">Year</label><br>
-            <p id="yearError"></p><br><br>
-            <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
-            <button  id="bttn3" onclick=getAkanName()>Get Akan Name</button>
+        <div class="container">
+            <h>Akan Name Generator</h>
+            <p>In Ghana, children are named according to their Gender and the day of the week in which they were born. For example, a male child born on Monday would be named Kwadwo, while a female would be named Adwoa. These are called 'day names'.</p>
+            <p>Curious about what your day name would be? Find out by filling the form below!</p>
+            <p></p>
+        </div>
+        <div class="forms">>
+            <form  input id="genderForm" onsubmit="return myGenderFunction()">
+                <h1>Gender</h1>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+                <button type="submit" id="bttn1" onclick=myGenderFunction()>Submit</button>
+                <p id="genderError"></p>
+            </form>
+            <form onsubmit="return myBirthdayFunction()">
+                <h1>Birthday</h1>
+                <input type="number" id="date" placeholder="DD" name="date" required>
+                <label for="date">Date</label><br>
+                <p id="dateError"></p><br>
+                <input type="number" id="month" placeholder="MM" name="month" required>
+                <label for="month">Month</label><br>
+                <p id="monthError"></p><br>
+                <input type="number" id="year" placeholder="YYYY" name="year" required>
+                <label for="year">Year</label><br>
+                <p id="yearError"></p><br><br>
+                <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
+                <button  id="bttn3" onclick=getAkanName()>Get Akan Name</button>
 
-        </form>
+            </form>
+        </div>
 
     </body>
 </html>
