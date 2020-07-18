@@ -2,7 +2,7 @@ h {
     color: brown;
     background-color: cornsilk;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1in;
 }
 .box {
     width: 100%;
@@ -18,6 +18,9 @@ img {
 .container {
     text-align: center;
 }
+.forms {
+    text-align: left;
+}
 body {
-    background-color: khaki;
+    background-color: cornsilk;
 }
