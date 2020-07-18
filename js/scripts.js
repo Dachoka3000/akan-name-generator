@@ -1,3 +1,24 @@
+var myGenderFunction=function() {
+    var maleUser= document.getElementById("male");
+    var femaleUser=document.getElementById("female");
+    if (maleUser.checked===true){
+        alert("Your gender has been recorded as male");
+    }else if (femaleUser.checked===true){
+        alert("Your gender has been recorded as female");
+    }else{
+        alert("Gender is required!");
+    }
+};
+
+
+
+
+
+
+
+
+
+
 var myFirstFunction= function(){
     var birthday= new Date();
     var dateOfBirth=parseInt(document.getElementById("date").value);
