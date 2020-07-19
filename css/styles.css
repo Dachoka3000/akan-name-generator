@@ -1,8 +1,11 @@
 h {
     color: brown;
-    background-color: cornsilk;
+    background-color: khaki;
     font-weight: bolder;
-    font-size: 1in;
+    font-size: 0.5in;
+}
+h1 {
+    color: brown;
 }
 .box {
     width: 100%;
@@ -15,12 +18,28 @@ img {
     width: 100%;
     height: 100%;
 }
+.important {
+    font-style: italic;
+    font-weight: bolder;
+}
+.veryimportant {
+    font-style: italic;
+    font-weight: bolder;
+    color: maroon;
+}
 .container {
     text-align: center;
 }
 .forms {
     text-align: left;
 }
+#bttn3 {
+    background-color: grey;
+    font-size: larger;
+    font-weight: bolder;
+    color: black;
+}
 body {
-    background-color: cornsilk;
+    background-color: khaki;
+
 }
