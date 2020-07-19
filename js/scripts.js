@@ -26,25 +26,26 @@ var myBirthdayFunction= function(){
     } else {
         document.getElementById("dateError").innerHTML="*Response recorded.Please confirm details below";
     }
-    if (monthOfBirth.value<0 || monthOfBirth.value>12) {
+    if(monthOfBirth.value<0 || monthOfBirth.value>12) {
        document.getElementById("monthError").innerHTML="*Please enter valid month";
         return false;
-    } else if (monthOfBirth.value==="" || monthOfBirth===null) {
+    } else if(monthOfBirth.value==="" || monthOfBirth.value===null) {
         document.getElementById("monthError").innerHTML="*This field is required!";
         return false;
     } else {
         document.getElementById("monthError").innerHTML="*Response recorded.Please confirm details below";
     }
-    if (yearOfBirth.value<0) {
+    if(yearOfBirth.value<0) {
         document.getElementById("yearError").innerHTML="*Please enter valid year";
         return false;
-    } else if (yearOfBirth==="" || yearOfBirth===null) {
+    } else if(yearOfBirth.value==="" || yearOfBirth.value===null) {
         document.getElementById("yearError").innerHTML="*This field is required!";
         return false;
     } else {
         document.getElementById("yearError").innerHTML="*Response recorded. Please confirm details below!";
  
     };
+    alert("Your response has been recorded. Please confirm details below.");
     
 };
 
