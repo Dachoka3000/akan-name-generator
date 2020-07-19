@@ -20,6 +20,7 @@ css
 -Press the submit button. 
 -Input birthday details
 -Press the submit button
+-Confirm all the details again in the confirm details section. This is the most important part because the confirmed details are the ones that will be used to calculate day of the week born and generate akan name.
 -Press the 'get akan name button'
 -Your details will be fed into the application which will then generate your akan name.
 -If the dates you enter are not valid, you will receive an error telling you to put a valid one.
