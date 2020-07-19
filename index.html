@@ -38,6 +38,19 @@
                 <label for="year">Year</label><br>
                 <p id="yearError"></p><br><br>
                 <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
+            </form>
+            <form>
+                <h1>Confirm details</h1> 
+                <input type="radio" id="maleUser" name="gender" value="male">
+                <label for="maleUser">Male</label>
+                <input type="radio" id="femaleUser" name="gender" value="female">
+                <label for="femaleUser">Female</label><br><br>
+                <input type="number" id="dateOfBirth" placeholder="DD" name="date" required>
+                <label for="dateOfBirth">Date</label>
+                <input type="number" id="monthOfBirth" placeholder="MM" name="month" required>
+                <label for="monthOfBirth">Month</label>
+                <input type="number" id="yearOfBirth" placeholder="YYYY" name="year" required>
+                <label for="yearOfBirth">Year</label><br><br>
                 <button  id="bttn3" onclick=getAkanName()>Get Akan Name</button>
 
             </form>
