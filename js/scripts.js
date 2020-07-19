@@ -20,29 +20,39 @@ var myBirthdayFunction= function(){
     if (dateOfBirth.value<0 || dateOfBirth.value >31) {
         document.getElementById("dateError").innerHTML="*Please enter valid date";
         return false;
+    } else if(dateOfBirth.value==="" || dateOfBirth.value=== null) {
+        document.getElementById("dateError").innerHTML="*This field is required!";
+        return false;
     } else {
-        "";
+        document.getElementById("dateError").innerHTML="*Response recorded.Please confirm details below";
     }
     if (monthOfBirth.value<0 || monthOfBirth.value>12) {
        document.getElementById("monthError").innerHTML="*Please enter valid month";
         return false;
-    } else {
-        "";
-    }
-    if (yearOfBirth.value<0 || yearOfBirth.value>2020 ) {
-        document.getElementById("yearError").innerHTML="*Please enter valid year";
+    } else if (monthOfBirth.value==="" || monthOfBirth===null) {
+        document.getElementById("monthError").innerHTML="*This field is required!";
         return false;
     } else {
-        "";
+        document.getElementById("monthError").innerHTML="*Response recorded.Please confirm details below";
+    }
+    if (yearOfBirth.value<0) {
+        document.getElementById("yearError").innerHTML="*Please enter valid year";
+        return false;
+    } else if (yearOfBirth==="" || yearOfBirth===null) {
+        document.getElementById("yearError").innerHTML="*This field is required!";
+        return false;
+    } else {
+        document.getElementById("yearError").innerHTML="*Response recorded. Please confirm details below!";
+ 
     };
+    
 };
 
 var getAkanName= function(){
     var maleUser=document.getElementById("maleUser");
     var femaleUser=document.getElementById("femaleUser");
     
-    var century= (parseInt(document.getElementById("yearOfBirth").value))/100; //represents century;
-    var c= century.toFixed();
+    var c= (parseInt(document.getElementById("yearOfBirth").value))/100; //represents century;
     var y= (parseInt(document.getElementById("yearOfBirth").value))%100; // represents year born
     var m=parseInt(document.getElementById("monthOfBirth").value);//represents the month the user was born
     var dt=parseInt(document.getElementById("dateOfBirth").value);//represents the date of the month the user was born
@@ -67,6 +77,8 @@ var getAkanName= function(){
         alert("Your akan name is "+ maleNames[5]);
     } else if (maleUser.checked===true && dayOfWeek<=6) {
         alert("Your akan name is "+maleNames[6]);
+    } else if (maleUser.checked===true && dayOfWeek<=7) {
+        alert("Your akan name is "+ maleNames[0]);
     } else if (femaleUser.checked===true && dayOfWeek<=0) {
         alert("Your akan name is "+ femaleNames[0]);
     } else if (femaleUser.checked===true && dayOfWeek<=1) {
@@ -81,6 +93,8 @@ var getAkanName= function(){
         alert("Your akan name is "+femaleNames[5]);
     } else if (femaleUser.checked===true && dayOfWeek<=6) {
         alert("Your akan name is "+ femaleNames[6]);
+    } else if (femaleUser.checked===true && dayOfWeek<=7) {
+        alert("Your akan name is "+femaleNames[0]);
     } else {
         alert("Error!");
     };
