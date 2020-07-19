@@ -2,9 +2,9 @@ var myGenderFunction=function() {
     var maleUser= document.getElementById("male");
     var femaleUser=document.getElementById("female");
     if (maleUser.checked===true){
-        alert("Your gender has been recorded as male");
+        alert("Your gender has been recorded as male. Please confirm details below.");
     }else if (femaleUser.checked===true){
-        alert("Your gender has been recorded as female");
+        alert("Your gender has been recorded as female.Please confirm details below.");
     }else{
         alert("Gender is required!");
         return false;
