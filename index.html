@@ -16,11 +16,11 @@
             <p>Curious about what your day name would be? Find out by filling the form below!</p>
             <p></p>
         </div>
-        <div class="forms">>
+        <div class="forms">
             <form  input id="genderForm" onsubmit="return myGenderFunction()">
                 <h1>Gender</h1>
                 <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
+                <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br><br>
                 <button type="submit" id="bttn1" onclick=myGenderFunction()>Submit</button>
@@ -37,7 +37,7 @@
                 <input type="number" id="year" placeholder="YYYY" name="year" required>
                 <label for="year">Year</label><br>
                 <p id="yearError"></p><br><br>
-                <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br><br>
+                <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br>
             </form>
             <form>
                 <h1>Confirm details</h1> 
@@ -45,9 +45,9 @@
                 <label for="maleUser">Male</label>
                 <input type="radio" id="femaleUser" name="gender" value="female">
                 <label for="femaleUser">Female</label><br><br>
-                <input type="number" id="dateOfBirth" placeholder="DD" name="date" required>
+                <input type="number" id="dateOfBirth" placeholder="DD" name="date" required min="0" max="31">
                 <label for="dateOfBirth">Date</label>
-                <input type="number" id="monthOfBirth" placeholder="MM" name="month" required>
+                <input type="number" id="monthOfBirth" placeholder="MM" name="month" required min="0" max="12">
                 <label for="monthOfBirth">Month</label>
                 <input type="number" id="yearOfBirth" placeholder="YYYY" name="year" required>
                 <label for="yearOfBirth">Year</label><br><br>
