@@ -1,57 +1,36 @@
-var myGenderFunction=function() {
-    var maleUser= document.getElementById("male");
-    var femaleUser=document.getElementById("female");
-    if (maleUser.checked===true){
-        alert("Your gender has been recorded as male. Please confirm details below.");
-    }else if (femaleUser.checked===true){
-        alert("Your gender has been recorded as female.Please confirm details below.");
-    }else{
-        alert("Gender is required!");
-        return false;
-    }
-};
-
-
-var myBirthdayFunction= function(){
-    var dateOfBirth=document.getElementById("date");
-    var monthOfBirth=document.getElementById("month");
-    var yearOfBirth=document.getElementById("year");
-    
-    if (dateOfBirth.value<0 || dateOfBirth.value >31) {
-        document.getElementById("dateError").innerHTML="*Please enter valid date";
-        return false;
-    } else if(dateOfBirth.value==="" || dateOfBirth.value=== null) {
-        document.getElementById("dateError").innerHTML="*This field is required!";
-        return false;
-    } else {
-        document.getElementById("dateError").innerHTML="*Response recorded.Please confirm details below";
-    }
-    if(monthOfBirth.value<0 || monthOfBirth.value>12) {
-       document.getElementById("monthError").innerHTML="*Please enter valid month";
-        return false;
-    } else if(monthOfBirth.value==="" || monthOfBirth.value===null) {
-        document.getElementById("monthError").innerHTML="*This field is required!";
-        return false;
-    } else {
-        document.getElementById("monthError").innerHTML="*Response recorded.Please confirm details below";
-    }
-    if(yearOfBirth.value<0) {
-        document.getElementById("yearError").innerHTML="*Please enter valid year";
-        return false;
-    } else if(yearOfBirth.value==="" || yearOfBirth.value===null) {
-        document.getElementById("yearError").innerHTML="*This field is required!";
-        return false;
-    } else {
-        document.getElementById("yearError").innerHTML="*Response recorded. Please confirm details below!";
- 
-    };
-    alert("Your response has been recorded. Please confirm details below.");
-    
-};
-
 var getAkanName= function(){
     var maleUser=document.getElementById("maleUser");
     var femaleUser=document.getElementById("femaleUser");
+   
+    if(maleUser.checked===false && femaleUser.checked===false){
+        document.getElementById("genderError").innerHTML="*Please enter gender details!";
+        return false;
+    } else {
+        "";
+    };
+    
+    var dateOfBirth= document.getElementById("dateOfBirth");
+    var monthOfBirth= document.getElementById("monthOfBirth");
+    var yearOfBirth= document.getElementById("yearOfBirth");
+
+    if(dateOfBirth.value<0 || dateOfBirth.value>31) {
+        document.getElementById("dateError").innerHTML="*Please enter valid date";
+        return false;
+    } else {
+        "";
+    };
+    if(monthOfBirth.value<0 || monthOfBirth.value>12) {
+        document.getElementById("monthError").innerHTML="*Please enter valid month";
+        return false;
+    } else {
+        "";
+    };
+    if(yearOfBirth.value<0) {
+        document.getElementById("yearError").innerHTML="*Please enter valid year";
+        return false;
+    } else {
+        "";
+    }
     
     var c= (parseInt(document.getElementById("yearOfBirth").value))/100; //represents century;
     var y= (parseInt(document.getElementById("yearOfBirth").value))%100; // represents year born
