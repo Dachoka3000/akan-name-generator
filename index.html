@@ -13,43 +13,25 @@
         <div class="container">
             <h>Akan Name Generator</h>
             <p>In Ghana, children are named according to their <strong>gender</strong> and the <strong>day of the week</strong> in which they were born. For example, a male child born on Monday would be named <span class="important">Kwadwo</span>, while a female child would be named <span class="important">Adwoa</span>. These are called <span class="important">'day names'</span>.</p>
-            <p>Curious about what your day name would be? Find out by filling the form below! <span class="veryimportant">(Important: To get akan name, please enter your details in the 'Confirm details' section below!)</span></p>
+            <p>Curious about what your day name would be? Find out by filling the form below!</p>
             <p></p>
         </div>
         <div class="forms">
-            <form  input id="genderForm" onsubmit="return myGenderFunction()">
-                <h1>Gender</h1>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br><br>
-                <button type="submit" id="bttn1" onclick=myGenderFunction()>Submit</button>
-                <p id="genderError"></p>
-            </form>
-            <form onsubmit="return myBirthdayFunction()">
-                <h1>Birthday</h1>
-                <input type="number" id="date" placeholder="DD" name="date" required>
-                <label for="date">Date</label><br>
-                <p id="dateError"></p><br>
-                <input type="number" id="month" placeholder="MM" name="month" required>
-                <label for="month">Month</label><br>
-                <p id="monthError"></p><br>
-                <input type="number" id="year" placeholder="YYYY" name="year" required>
-                <label for="year">Year</label><br>
-                <p id="yearError"></p><br><br>
-                <button  type="submit" id="bttn2" onclick=myBirthdayFunction()>Submit</button><br><br>
-            </form>
-            <form>
-                <h1>Confirm details</h1> 
+           
+            <form onsubmit="return getAkanName()">
+                <h1>Enter details</h1> 
                 <input type="radio" id="maleUser" name="gender" value="male">
                 <label for="maleUser">Male</label>
                 <input type="radio" id="femaleUser" name="gender" value="female">
-                <label for="femaleUser">Female</label><br><br>
+                <label for="femaleUser">Female</label>
+                <p id="genderError"></p>
                 <input type="number" id="dateOfBirth" placeholder="DD" name="date"  min="0" max="31" required>
-                <label for="dateOfBirth">Date</label>
+                <label for="dateOfBirth">Date</label><BR>
+                <p id="dateError"></p>
                 <input type="number" id="monthOfBirth" placeholder="MM" name="month" min="0" max="12" required>
                 <label for="monthOfBirth">Month</label>
-                <input type="number" id="yearOfBirth" placeholder="YYYY" name="year" required>
+                <p id="monthError"></P>
+                <input type="number" id="yearOfBirth" placeholder="YYYY" name="year"  min="0" required>
                 <label for="yearOfBirth">Year</label><br><br>
                 <button type="submit"  id="bttn3" onclick=getAkanName()>Get Akan Name</button>
 
